@@ -1,0 +1,39 @@
+---
+import LinkedIn from "./icons/LinkedIn.astro";
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarollador Web & Software",
+    company: "Freelance",
+    description:
+      "Desarrollo Web en distintas tecnologias, ajustandome a las necesidades del cliente, tales como Wordpress, Elementor, WooCoommerce, HTML, CSS, Javascript y como novedad... Astro!. Asesoramiento y diseño Web. Desarrollo de modulos y software a medida en Java y JS.",
+    link: "https://www.linkedin.com/in/jdlucaschaves/",
+  },
+  {
+    date: "Abril 2024 - Actualmente...",
+    title: "Desarrollador Web",
+    company: "Novaz Agency",
+    description:
+      "En mi rol de desarrollador, cree mas de 100 sitios web para diferentes clientes de todas partes del mundo, colaborando codo a codo con el equipo de diseño, trabajando en la mayoria de estos sitios con Elementor Pro, llevando los diseños desde figma a un entorno de produccion. Tambien me encargue de la creacion de plugins y realizar mantenimiento a diversas empresas.",
+    link:"https://novazagency.com/proyecto-web/",
+    },
+  {
+    date: "2022 - 2024",
+    title: "Desarrollador Web & IT",
+    company: "Payne SA | El Diario de La Republica",
+    description:
+      "En este rol ayudé, coordiné y brindé recursos digitales o tecnológicos al personal del diario más importante de la provincia de San Luis. Y como fullstack developer, desarrollo los sitios webs de los nuevos productos, tales como ¨ClasificadosED¨,¨FM Radio Lafinur¨,¨La Grafica San Luis¨, etc..",
+    },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
